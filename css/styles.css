@@ -1,0 +1,40 @@
+
+ .protons {
+  color: black;
+}
+
+.neutrons {
+  color: gray;
+}
+
+.electrons {
+  color: red;
+}
+
+.particle {
+  display: inline-block;
+  width:18px;
+  height: 18px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+
+}
+
+#nucleus .particle {
+  width:30px;
+  height:30px;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  border-radius:15px;
+}
+
+.protons .particle {
+  background: black;
+}
+.neutrons .particle {
+  background: gray;
+}
+.electrons .particle {
+  background: red;
+}

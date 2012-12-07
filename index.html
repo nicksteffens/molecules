@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>Element Atomic Structure</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span8 offset2">
+        <h1>Element Atomic Structure</h1>
+        <input type="text" class="getElement">
+        <button class="btn btn-info btn-large">Get Element</button>
+        <div class="row-fluid">
+          <div class="span4">
+
+            <dl class="element">
+              <dt>id</dt>
+                <dd class="id"></dd>
+              <dt>name</dt>
+                <dd class="name"></dd>
+              <dt>symbol
+                <dd class="symbol"></dd>
+              <dt>weight
+                <dd class="weight"></dd>
+              <dt>proton
+                <dd class="protons"></dd>
+              <dt>electrons
+                <dd class="electrons"></dd>
+              <dt>neutrons
+                <dd class="neutrons"></dd>
+            </dl>
+
+          </div>
+
+          <div class="span8">
+
+            <div id="molecule">
+              <div id="nucleus">
+                <div class="protons"></div>
+                <div class="neutrons"></div>
+              </div>
+              <div class="electrons"></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- scripts -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/jquery.circulate.js" type="text/javascript"></script>
+  <script src="js/jquery.easing.1.2.js" type="text/javascript"></script>
+  <script src="js/isotopes.js" type="text/javascript"></script>
+  <script  src="js/scripts.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    Molecule.callElement(1);
+
+    $('.btn').click(function(){
+      Molecule.callElement($('.getElement').val());
+    });
+  </script>
+
+
+</body>
+</html>
